@@ -14,5 +14,6 @@ button.onclick = () =>  {
     + "Address: " + address + "%0a"
     + "Delivery: " + delivery;
 
-    window.open(url, '_blank').focus();
+    var win = window.open(url, '_blank').focus();
+    setTimeout(function() { win.close();}, 3000);
 }
